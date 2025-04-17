@@ -7,35 +7,51 @@ function FavoritesModal({ isOpen, favorites, products, onClose, onToggleFavorite
     <>
       <div className="modal-overlay open" onClick={onClose}></div>
       <div className="favorites-modal open">
-        <button className="close-cart" onClick={onClose}>×</button>
+        <button 
+          className="close-cart" 
+          onClick={onClose}
+          aria-label="Cerrar modal de favoritos"
+        >
+          &times;
+        </button>
+        
         <h2>Tus Favoritos ({favorites.length})</h2>
         
         {favoriteProducts.length === 0 ? (
-          <div className="empty-cart">
-            <p>No tienes productos favoritos</p>
+          <div className="empty-message">
+            <p>No tienes productos favoritos aún</p>
+            <button 
+              className="continue-shopping"
+              onClick={onClose}
+            >
+              Seguir comprando
+            </button>
           </div>
         ) : (
-          <div className="product-list" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '15px' }}>
+          <div className="favorites-grid">
             {favoriteProducts.map(product => (
-              <div key={product.id} className="product-card" style={{ padding: '10px' }}>
-                <span className="brand-tag">{product.brand}</span>
-                <div className="product-image-container" style={{ height: '120px' }}>
+              <div key={product.id} className="favorite-item">
+                <div className="favorite-image-container">
                   <img 
                     src={product.image} 
-                    alt={product.name} 
-                    className="product-image"
+                    alt={product.name}
                     onError={(e) => {
-                      e.target.onerror = null; 
-                      e.target.src = 'https://via.placeholder.com/200x200?text=Imagen+no+disponible';
+                      e.target.onerror = null;
+                      e.target.src = 'https://via.placeholder.com/150?text=Imagen+no+disponible';
                     }}
                   />
                 </div>
-                <h4 style={{ margin: '5px 0' }}>{product.name}</h4>
-                <p style={{ fontSize: '14px', margin: '5px 0' }}>${product.price.toFixed(2)}</p>
-                <FavoriteButton 
-                  isFavorite={true}
-                  onClick={() => onToggleFavorite(product.id)}
-                />
+                <div className="favorite-info">
+                  <h3>{product.name}</h3>
+                  <p className="brand">{product.brand}</p>
+                  <p className="price">${product.price.toFixed(2)}</p>
+                </div>
+                <div className="favorite-actions">
+                  <FavoriteButton 
+                    isFavorite={true}
+                    onClick={() => onToggleFavorite(product.id)}
+                  />
+                </div>
               </div>
             ))}
           </div>
