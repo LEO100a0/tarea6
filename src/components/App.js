@@ -7,72 +7,10 @@ const phoneProducts = [
     brand: 'iPhone', 
     price: 1099.99, 
     description: '256GB, Titanio negro', 
-    image: 'images/iphone-15pro.png',
+    image: '../images/iphone-15pro.png',
     isFavorite: false 
   },
-  { 
-    id: 2, 
-    name: 'iPhone 14', 
-    brand: 'iPhone', 
-    price: 799.99, 
-    description: '128GB, Medianoche', 
-    image: 'images/iphone-14.png',
-    isFavorite: false 
-  },
-  { 
-    id: 3, 
-    name: 'Samsung Galaxy S23 Ultra', 
-    brand: 'Samsung', 
-    price: 1199.99, 
-    description: '256GB, Phantom Black', 
-    image: 'images/samsung-23.png',
-    isFavorite: false 
-  },
-  { 
-    id: 4, 
-    name: 'Samsung Galaxy Z Flip5', 
-    brand: 'Samsung', 
-    price: 999.99, 
-    description: '256GB, Grafito', 
-    image: 'images/Samsung-GalaxyZFlip5.png',
-    isFavorite: false 
-  },
-  { 
-    id: 5, 
-    name: 'Huawei P60 Pro', 
-    brand: 'Huawei', 
-    price: 899.99, 
-    description: '256GB, Rocío dorado', 
-    image: 'images/Huawei-P60Pro.png',
-    isFavorite: false 
-  },
-  { 
-    id: 6, 
-    name: 'Huawei Mate 50 Pro', 
-    brand: 'Huawei', 
-    price: 1099.99, 
-    description: '512GB, Cristal negro', 
-    image: 'images/Huawei-Mate50Pro.png',
-    isFavorite: false 
-  },
-  { 
-    id: 7, 
-    name: 'iPhone SE (3ra gen)', 
-    brand: 'iPhone', 
-    price: 429.99, 
-    description: '64GB, Medianoche', 
-    image: 'images/iPhone-SE.png',
-    isFavorite: false 
-  },
-  { 
-    id: 8, 
-    name: 'Samsung Galaxy A54', 
-    brand: 'Samsung', 
-    price: 449.99, 
-    description: '128GB, Awesome Violet', 
-    image: 'images/Samsung-GalaxyA54.png',
-    isFavorite: false 
-  }
+  // ... (otros productos)
 ];
 
 function App() {
