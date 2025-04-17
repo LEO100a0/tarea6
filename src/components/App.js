@@ -7,7 +7,7 @@ const phoneProducts = [
     brand: 'iPhone', 
     price: 1099.99, 
     description: '256GB, Titanio negro', 
-    image: '../images/iphone-15pro.png',
+    image: 'images/iphone-15pro.png',
     isFavorite: false 
   },
   { 
@@ -16,7 +16,7 @@ const phoneProducts = [
     brand: 'iPhone', 
     price: 799.99, 
     description: '128GB, Medianoche', 
-    image: '../images/iphone-14.png',
+    image: 'images/iphone-14.png',
     isFavorite: false 
   },
   { 
@@ -25,7 +25,7 @@ const phoneProducts = [
     brand: 'Samsung', 
     price: 1199.99, 
     description: '256GB, Phantom Black', 
-    image: '../images/samsung-23.png',
+    image: 'images/samsung-23.png',
     isFavorite: false 
   },
   { 
@@ -34,7 +34,7 @@ const phoneProducts = [
     brand: 'Samsung', 
     price: 999.99, 
     description: '256GB, Grafito', 
-    image: '../images/Samsung-GalaxyZFlip5.png',
+    image: 'images/Samsung-GalaxyZFlip5.png',
     isFavorite: false 
   },
   { 
@@ -43,7 +43,7 @@ const phoneProducts = [
     brand: 'Huawei', 
     price: 899.99, 
     description: '256GB, Rocío dorado', 
-    image: '../images/Huawei-P60Pro.png',
+    image: 'images/Huawei-P60Pro.png',
     isFavorite: false 
   },
   { 
@@ -52,7 +52,7 @@ const phoneProducts = [
     brand: 'Huawei', 
     price: 1099.99, 
     description: '512GB, Cristal negro', 
-    image: '../images/Huawei-Mate50Pro.png',
+    image: 'images/Huawei-Mate50Pro.png',
     isFavorite: false 
   },
   { 
@@ -61,7 +61,7 @@ const phoneProducts = [
     brand: 'iPhone', 
     price: 429.99, 
     description: '64GB, Medianoche', 
-    image: '../images/iPhone-SE.png',
+    image: 'images/iPhone-SE.png',
     isFavorite: false 
   },
   { 
@@ -70,7 +70,7 @@ const phoneProducts = [
     brand: 'Samsung', 
     price: 449.99, 
     description: '128GB, Awesome Violet', 
-    image: '../images/Samsung-GalaxyA54.png',
+    image: 'images/Samsung-GalaxyA54.png',
     isFavorite: false 
   }
 ];
